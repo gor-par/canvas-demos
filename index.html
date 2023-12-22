@@ -4,18 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
     <title>Canvas Demos</title>
   </head>
   <body>
     <canvas></canvas>
 
-    <div class="demo-buttons">
-      <button id="demo1">Demo 1</button>
-      <button id="demo2">Demo 2</button>
-      <button id="demo3">Demo 3</button>
-      <button id="demo4">Demo 4</button>
-      <button id="demo5">Demo 5</button>
-      <button id="demo6">Demo 6</button>
+    <div class="controls">
+      <div class="demo-buttons">
+        <button id="demo1">Demo 1</button>
+        <button id="demo2">Demo 2</button>
+        <button id="demo3">Demo 3</button>
+        <button id="demo4">Demo 4</button>
+        <button id="demo5">Demo 5</button>
+      </div>
+
+      <div id="demo1-form" class="demo-form hidden">
+        <select>
+          <option value="square">Square</option>
+          <option value="circle">Circle</option>
+        </select>
+        <input type="number" placeholder="X Coord." />
+        <input type="number" placeholder="Y Coord." />
+        <input type="number" placeholder="Size." />
+        <input type="color" />
+        <button>Draw</button>
+      </div>
+      <div id="demo2-form" class="demo-form hidden">
+        <input type="number" placeholder="Width" />
+
+        <input type="color" />
+        <button>New Line</button>
+        <button>Fill</button>
+      </div>
+      <div id="demo3-form" class="demo-form hidden"></div>
+      <div id="demo4-form" class="demo-form hidden"></div>
+      <div id="demo5-form" class="demo-form hidden">
+        <p>Use arrows keys to control your character</p>
+        <p>Score: <span class="score"></span></p>
+      </div>
     </div>
 
     <script src="main.js"></script>
